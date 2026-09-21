@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="투자보고서">
+<meta name="theme-color" content="#1a73e8">
+<meta name="description" content="매일 1,000원 소액 모으기 전략 기반 데일리 투자보고서">
+<title>데일리 투자보고서</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:#f5f7fa;color:#202124;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic',Roboto,sans-serif;font-size:14px;line-height:1.65;-webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:10;background:#1a73e8;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 12px;padding-top:calc(10px + env(safe-area-inset-top));box-shadow:0 2px 6px rgba(0,0,0,.15)}
+header .t{font-size:17px;font-weight:700}
+header .s{font-size:11px;opacity:.92;margin-top:2px}
+header .btns{display:flex;gap:8px}
+header button{background:#fff;color:#1a73e8;border:none;border-radius:10px;font-weight:700;font-size:13px;padding:9px 12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+header button:disabled{opacity:.5}
+header button:active{transform:scale(.96)}
+#statusBar{background:#e8f0fe;padding:6px 14px;font-size:12px;color:#174ea6;display:flex;align-items:center;gap:10px}
+#statusBar.hidden{display:none}
+#statusBar .bar{flex:0 0 90px;height:6px;background:#c4d7f7;border-radius:3px;overflow:hidden}
+#barFill{height:100%;width:0;background:#1a73e8;transition:width .2s}
+.wrap{padding:12px;padding-bottom:calc(24px + env(safe-area-inset-bottom));max-width:820px;margin:0 auto}
+.card{background:#fff;border-radius:14px;padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.hero{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff}
+.hero .ht{font-size:20px;font-weight:700}
+.hero .hs{font-size:12px;opacity:.92;margin-top:4px}
+h2{font-size:16.5px;margin:20px 2px 10px;border-left:5px solid #1a73e8;padding-left:9px;color:#0d47a1}
+h3{font-size:14.5px;margin:14px 0 6px;color:#1a73e8}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{background:#eef3fb;color:#333;padding:7px 4px;text-align:left;border-bottom:2px solid #d2e3fc;white-space:nowrap}
+td{padding:7px 4px;border-bottom:1px solid #eceff1;vertical-align:top}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;white-space:nowrap}
+.g{background:#e6f4ea;color:#137333}.y{background:#fef7e0;color:#b06000}.r{background:#fce8e6;color:#c5221f}
+.up{color:#d93025;font-weight:700}.dn{color:#1a73e8;font-weight:700}
+.muted{color:#5f6368;font-size:12px}
+.big{font-size:17px;font-weight:700;margin:2px 0}
+.kv{display:flex;flex-wrap:wrap;margin:8px -3px}
+.kv div{background:#f1f5fb;border-radius:8px;padding:6px 10px;font-size:11.5px;margin:3px;color:#444}
+.kv b{display:block;font-size:13px;color:#111}
+.note{background:#fff8e1;border-radius:10px;padding:10px 12px;font-size:12.5px;color:#5f4b00;margin:8px 0}
+p{margin:7px 0}
+ul{margin:6px 0;padding-left:20px}li{margin:4px 0}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="t">📈 데일리 투자보고서</div>
+    <div class="s" id="subLine">마지막 생성: -</div>
+  </div>
+  <div class="btns">
+    <button id="btnRefresh">🔄 새로고침</button>
+    <button id="btnShare">📤 공유</button>
+  </div>
+</header>
+
+<div id="statusBar" class="hidden">
+  <div class="bar"><div id="barFill"></div></div>
+  <span id="statusText">시세 수집 중...</span>
+</div>
+
+<div class="wrap" id="content"></div>
+
+<script>
+'use strict';
+/* =====================================================================
+   데일리 투자보고서 웹앱 (iOS/안드로이드 공용)
+   - 새로고침: 실시간 시세 수집 → 보고서 생성 → 저장
+   - 실행 시: 저장된 마지막 보고서 표시
+   - 공유: Web Share API (카카오톡 등)
+   시세 출처: Yahoo Finance (브라우저 CORS 우회를 위해 공개 프록시 경유 시도)
+===================================================================== */
+
+// ---------------- 종목·지수 정의 (선정 근거 기준: 2026-09-18) ----------------
+var END_STD = '목표가 도달 시 보유분 1/3 매도 → 목표가 초과 후 20일선 이탈 시 1/3 추가 매도 → 200일선 이탈 시 나머지 매도 검토. 손절가를 일봉 종가로 깨면 전량 매도하고 모으기를 중단합니다.';
+
+var INDICES = [
+  {sym:'^KS11', name:'코스피'},
+  {sym:'^KQ11', name:'코스닥'},
+  {sym:'^GSPC', name:'S&P 500'},
+  {sym:'^IXIC', name:'나스닥'},
+  {sym:'^DJI', name:'다우존스'},
+  {sym:'^VIX', name:'VIX 공포지수'},
+  {sym:'KRW=X', name:'원/달러 환율'},
+  {sym:'CL=F', name:'국제유가 WTI'},
+  {sym:'GC=F', name:'금'}
+];
+
+var CAT_NAMES = ['🇰🇷 국내 주식 TOP 5','🇰🇷 국내 ETF TOP 5','🌎 해외 주식 TOP 5','🌎 해외 ETF TOP 5'];
+
+function T(sym,name,cur,tp,sp,why,sg,eg){ return {sym:sym,name:name,cur:cur,tp:tp,sp:sp,why:why,sg:sg,eg:eg||END_STD,ok:false}; }
+
+function makeCats(){
+  return [
+    [
+      T('005930.KS','삼성전자','KRW',0.15,0.10,
+        '메모리 반도체 슈퍼사이클의 대표 수혜주입니다. 차세대 HBM4 개발을 완료해 주요 고객사에 샘플을 출하했으며, 외국인·기관 수급이 돌아오며 주가가 20·50·200일 이동평균선 위에서 추세 회복을 시도 중입니다. 실적은 3분기 실적과 마이크론 실적 발표에서 검증됩니다. 장기 모으기의 핵심 보유 종목입니다.',
+        '오늘부터 시작(1,000원). 당일 +5% 이상 급등하는 날은 절반만 매수합니다.'),
+      T('000660.KS','SK하이닉스','KRW',0.18,0.11,
+        'HBM 시장 최강자입니다. 엔비디아 차세대 플랫폼(베라 루빈)용 16단 HBM4 대량 양산 출하를 시작했다는 공급망 보고가 나왔고, 차세대 HBM 시장 점유율 약 70% 전망이 제기됩니다. 메모리 공급 부족 국면의 직접 수혜주이며 모든 이동평균선 위에서 상승 추세를 유지합니다.',
+        '오늘부터 시작(1,000원). 급등일(+5%↑)은 절반만 매수하거나 건너뜁니다.'),
+      T('105560.KS','KB금융','KRW',0.12,0.09,
+        '금리 인상기의 대표 수혜 업종인 은행의 대장주입니다. 금리 상승 시 순이자마진(NIM)이 개선되고, 배당과 자사주 매입·소각 등 주주환원이 강합니다. 주가는 20·50·200일선 위 완벽 정배열이며, 수급 이동으로 인한 하락일은 저가 매수 기회입니다.',
+        '오늘부터 시작(1,000원).'),
+      T('012450.KS','한화에어로스페이스','KRW',0.16,0.09,
+        '지정학적 긴장으로 세계 각국의 국방 예산이 구조적으로 확대되는 가운데, K9 등 수출 수주 잔고가 두터운 국내 대표 방산 기업입니다. 조정 후 50일선을 지키며 20일선을 회복하는 변곡점으로, 반도체 외 성장 동력을 담당하는 다각화 카드입니다.',
+        '오늘부터 시작(1,000원).'),
+      T('005380.KS','현대차','KRW',0.15,0.10,
+        '가치 투자 발굴 사례입니다. 급락 이후 역사적 저평가 구간에 진입했고 안정적 배당을 지급하며, 로봇·전동화 등 신사업 가치가 주가에 거의 반영되지 않았습니다. 다만 아직 모든 이동평균선 아래(약세 추세)이므로 절반 금액으로 느리게 모으며 바닥을 확인합니다.',
+        '절반(500원)으로 시작 → 20일선 회복 시 1,000원으로 증액합니다.')
+    ],
+    [
+      T('091160.KS','KODEX 반도체','KRW',0.15,0.10,
+        '삼성전자·하이닉스 등 국내 반도체 대표 종목에 한 번에 투자하는 ETF입니다. 메모리 슈퍼사이클의 수혜를 개별주보다 넓게 담는 도구입니다.',
+        '오늘부터 시작(1,000원).'),
+      T('360750.KS','TIGER 미국S&P500','KRW',0.10,0.09,
+        '미국 대표 500 기업에 분산 투자하는 장기 투자의 정석입니다. 원화 약세 구간에서는 환차익(달러 자산) 효과도 얻을 수 있는 코어 자산입니다.',
+        '오늘부터 시작(1,000원). 목표가 도달 시에도 50%는 장기 보유합니다.'),
+      T('133690.KS','TIGER 미국나스닥100','KRW',0.10,0.09,
+        '미국 성장·기술주 엔진입니다. 금리 인상기에는 변동성이 크지만, 매일 1,000원씩 사는 데일리 DCA는 그 변동성을 오히려 싸게 더 사는 기회로 바꿔 줍니다.',
+        '오늘부터 시작(1,000원).'),
+      T('091220.KS','TIGER 은행','KRW',0.13,0.09,
+        '국내 은행주 묶음에 투자하는 고배당 ETF입니다. 금리 인상기에 마진이 좋아지는 구조적 수혜를 받으며, 배당을 재투자하면 복리 효과가 커집니다.',
+        '오늘부터 시작(1,000원).'),
+      T('305540.KS','TIGER 2차전지소재Fn','KRW',0.15,0.10,
+        '반도체 일색 포트폴리오의 업종 다각화 카드입니다. 2차전지 산업은 긴 조정 끝에 바닥 신호(50일선 회복)가 나타나는 신흥 패턴 구간입니다. 위쪽 200일선이 저항이라 절반 금액으로 시작합니다.',
+        '절반(500원)으로 시작 → 200일선 돌파 시 전액으로 증액합니다.')
+    ],
+    [
+      T('NVDA','엔비디아','USD',0.14,0.10,
+        'AI 인프라의 표준입니다. 데이터센터용 칩 수요 증가 전망이 반도체 랠리를 이끌고 있으며, 주가는 20·50·200일선 위 정배열입니다. HBM·패키징 공급 부족의 최대 수혜주입니다.',
+        '오늘부터 시작(1,000원).'),
+      T('GOOGL','알파벳(구글)','USD',0.13,0.07,
+        '검색·클라우드·AI 모델·자율주행까지 갖춘 빅테크 중 상대적으로 합리적인 밸류에이션의 종목입니다. 20일선 위에서 강한 상승 추세를 유지합니다.',
+        '오늘부터 시작(1,000원).'),
+      T('MSFT','마이크로소프트','USD',0.13,0.08,
+        '클라우드(Azure)와 오피스 전반에 AI를 심어 수익화하는 "AI 수익화의 증거"입니다. 이익 가시성과 경기 방어력을 동시에 갖췄습니다.',
+        '오늘부터 시작(1,000원).'),
+      T('TSM','TSMC','USD',0.14,0.09,
+        '엔비디아·애플의 칩을 사실상 독점 생산하는 파운드리(위탁생산) 세계 1위입니다. 첨단 패키징 공급 부족(리드타임 52~78주)으로 가격 결정력까지 확보했습니다.',
+        '오늘부터 시작(1,000원).'),
+      T('LLY','일라이릴리','USD',0.15,0.09,
+        '비만·당뇨 치료제라는 구조적 성장 스토리를 가진 제약주입니다. 최근 조정으로 200일선 부근까지 밀린 눌림목 구간으로, 장기 모으기의 진입 기회로 삼습니다.',
+        '오늘부터 시작(1,000원). 200일선 이탈 시 일시 중단 후 재확인합니다.')
+    ],
+    [
+      T('VOO','VOO (S&P500)','USD',0.10,0.08,
+        '미국 시장 전체를 담는 코어 ETF입니다. 수수료 최저 수준으로, 연금처럼 오래 모으기 좋은 대표 종목입니다.',
+        '오늘부터 시작(1,000원). 목표가 도달 시에도 50%는 장기 보유합니다.'),
+      T('QQQ','QQQ (나스닥100)','USD',0.10,0.08,
+        '미국 기술·성장주 집중 ETF입니다. 변동성을 데일리 DCA로 극복하는 성장 엔진입니다.',
+        '오늘부터 시작(1,000원).'),
+      T('SCHD','SCHD (배당가치)','USD',0.11,0.08,
+        '미국 배당·가치주 ETF입니다. 50일선 아래로 밀린 과매도 근접 구간은 금리 인상기에 강해지는 배당주를 싸게 모을 기회입니다. 배당 재투자로 복리가 가속됩니다.',
+        '오늘부터 시작(1,000원). 저가 매수 적기 구간입니다.'),
+      T('VGT','VGT (미국 기술)','USD',0.11,0.09,
+        '미국 기술·반도체 섹터 집중 ETF입니다. 이동평균 정배열의 강추세로, 오늘의 메인 테마(AI·반도체 사이클)에 직접 올라탑니다.',
+        '오늘부터 시작(1,000원).'),
+      T('VXUS','VXUS (미국 제외 글로벌)','USD',0.10,0.08,
+        '미국을 제외한 유럽·일본·신흥국에 분산 투자해 특정 국가의 금리 정책 리스크를 나누는 지역 다각화 카드입니다. 단기 이평선 아래라 절반 금액으로 시작합니다.',
+        '절반(500원)으로 시작 → 20일선 회복 시 전액으로 증액합니다.')
+    ]
+  ];
+}
+
+var STATIC = {
+RATE_ENV: '2026년 9월 기준, 미국 연준은 9월 16일 회의에서 3년 만의 첫 금리 인상(+0.25%p)을 단행해 정책금리가 3.75~4.00%가 되었고, 올해 중 추가 인상 가능성도 시사했습니다. 한국은행도 두 차례 연속 인상으로 기준금리 3.00%이며, 일본은행 역시 인상에 동참했습니다. 배경에는 국제유가 급등발 인플레이션이 있습니다. 금리는 주식의 "중력"이어서, 금리 인상기에는 고밸류에이션 성장주가 불리해지고 은행(순이자마진 개선)·배당·가치주가 상대적으로 유리해집니다. 이 포트폴리오가 성장 6 : 배당·가치 4 구성을 유지하는 이유입니다.',
+SENTIMENT: 'VIX(공포지수)는 시장 심리의 온도계입니다. 낮을수록 시장이 안정적이지만, 동시에 작은 악재에도 흔들릴 수 있는 안일한 상태라는 뜻이라 손절 규칙이 필수입니다. 역사적으로 깊은 조정의 끝자락에서는 개인이 지쳐서 팔고 외국인·기관이 매집하는 패턴이 반복됩니다. 스냅샷의 지수 등락과 함께 외국인 수급 방향을 확인하면 심리의 전환점을 가늠할 수 있습니다.',
+GROWTH_DIV: '성장주의 장점은 AI 슈퍼사이클 같은 대형 성장의 과실을 먹는 것이고, 위험은 금리 인상기의 큰 변동성입니다. 배당주의 장점은 금리 인상기 은행 마진 개선과 배당 재투자의 복리 효과, 위험은 상승장에서의 상대적 소외입니다. 현재 결론은 "성장 코어 + 배당 방패" 조합입니다. 본 포트폴리오의 배당·가치 슬롯: KB금융, TIGER 은행, SCHD, 현대차, VXUS.',
+VALUE: '가치 투자는 가격이 내재가치보다 싸진 좋은 종목을 발굴해 기다리는 전략입니다. 이 포트폴리오에서는 급락 후 저평가 구간에 진입한 현대차를 느린 매수 발굴 종목으로 편입했습니다. 단, 싸다는 것과 바닥이라는 것은 다릅니다. 싸지만 계속 떨어지고 반등 촉매가 없는 "떨어지는 칼날"(제외 목록의 현대모비스 사례)은 추세 확인 신호(20일선 회복)가 나올 때까지 기다리는 것이 원칙입니다.',
+GLOBAL: '지정학적 긴장에 따른 국제유가 급등(1년 전 대비 +50% 이상)이 글로벌 긴축 재개의 원인입니다. 포트폴리오 보호 전략: ① 금리·유가에 상대적으로 덜 민감한 배당·가치주 분산 ② 원화 약세 시 유리한 달러 자산(미국 주식·미국 상장 ETF) 비중 유지 ③ 일부 자금을 금 관련 자산(예: KRX 금현물 ETF)으로 대체 가능 — 금은 인플레이션 헤지 기능을 유지 중입니다 ④ 손절 규율 유지.',
+DISCLAIMER: '본 보고서는 정보 제공 및 교육 목적이며, 특정 종목의 매수·매도 권유가 아닙니다. 투자 판단과 책임은 투자자 본인에게 있습니다. 시세는 생성 시점의 실시간 수집 기준이며, 목표가·손절가는 기술적 분석 기반 참고치로 시장 상황에 따라 달라질 수 있습니다. 원금 손실 가능성이 있으며 과거 수익률은 미래 수익을 보장하지 않습니다. 종목 선정 근거 기준: 2026년 9월 18일.'
+};
+
+// ---------------- 시세 수집 ----------------
+var SOURCES = [
+  { name:'direct',   timeout:6000,  url:function(u){ return u; } },
+  { name:'allorigins', timeout:14000, url:function(u){ return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u); } },
+  { name:'codetabs', timeout:14000, url:function(u){ return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u); } },
+  { name:'allorigins-get', timeout:14000, url:function(u){ return 'https://api.allorigins.win/get?url=' + encodeURIComponent(u); }, getMode:true }
+];
+
+function trySource(src, base){
+  return new Promise(function(resolve, reject){
+    var ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+    var timer = ctl ? setTimeout(function(){ ctl.abort(); }, src.timeout) : null;
+    fetch(src.url(base), ctl ? {signal: ctl.signal} : {})
+      .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function(j){
+        if(timer) clearTimeout(timer);
+        if(src.getMode){ // allorigins /get 모드는 본문이 contents 문자열에 담김
+          if(!j || typeof j.contents !== 'string') throw new Error('no contents');
+          j = JSON.parse(j.contents);
+        }
+        if(j && j.chart && j.chart.result && j.chart.result.length) resolve(j);
+        else throw new Error('empty');
+      })
+      .catch(function(e){ if(timer) clearTimeout(timer); reject(e); });
+  });
+}
+
+function fetchChart(sym){
+  var base = 'https://query1.finance.yahoo.com/v8/finance/chart/' + encodeURIComponent(sym) + '?range=1y&interval=1d';
+  var chain = Promise.reject(new Error('no source'));
+  SOURCES.forEach(function(src){
+    chain = chain.catch(function(){ return trySource(src, base); });
+  });
+  return chain;
+}
+
+function parseChart(j){
+  var r = j.chart.result[0], m = r.meta || {};
+  var raw = (((r.indicators || {}).quote || [{}])[0]).close || [];
+  var closes = raw.filter(function(x){ return typeof x === 'number'; });
+  return { price: m.regularMarketPrice || 0, chg: m.regularMarketChangePercent || 0,
+           wk52H: m.fiftyTwoWeekHigh || 0, wk52L: m.fiftyTwoWeekLow || 0, closes: closes };
+}
+
+// 동시 실행 제한 풀
+function pool(items, limit, worker){
+  var i = 0, results = [];
+  var runners = [];
+  for(var k = 0; k < Math.min(limit, items.length); k++){
+    runners.push((function next(){
+      var cur = i++;
+      if(cur >= items.length) return Promise.resolve();
+      return Promise.resolve(worker(items[cur], cur)).then(function(v){ results[cur] = v; return next(); });
+    })());
+  }
+  return Promise.all(runners).then(function(){ return results; });
+}
+
+// ---------------- 기술적 지표 ----------------
+function sma(c, n){ if(!c || c.length < n) return 0; var s = 0; for(var i = c.length - n; i < c.length; i++) s += c[i]; return s / n; }
+function rsi14(c){
+  if(!c || c.length < 16) return NaN;
+  var ag = 0, al = 0, i, ch;
+  for(i = 1; i <= 14; i++){ ch = c[i] - c[i-1]; if(ch > 0) ag += ch; else al -= ch; }
+  ag /= 14; al /= 14;
+  for(i = 15; i < c.length; i++){ ch = c[i] - c[i-1]; ag = (ag*13 + Math.max(ch,0))/14; al = (al*13 + Math.max(-ch,0))/14; }
+  if(al === 0) return 100;
+  return 100 - 100/(1 + ag/al);
+}
+function ret(c, n){ if(!c || c.length <= n || c[c.length-1-n] <= 0) return NaN; return (c[c.length-1]/c[c.length-1-n] - 1) * 100; }
+
+function unitFor(t){
+  if(t.cur === 'KRW') return t.price >= 100000 ? 1000 : (t.price >= 10000 ? 500 : 50);
+  return t.price >= 500 ? 10 : (t.price >= 100 ? 5 : (t.price >= 50 ? 1 : 0.5));
+}
+function roundTo(v, u){ return Math.round(v/u)*u; }
+
+function finalize(t){
+  if(!t.ok){ t.signal = '⚪ 시세 없음'; t.sigClass = 'r'; t.amount = '확인 필요'; return; }
+  if(!isNaN(t.rsi) && t.rsi > 70){ t.signal = '🔴 과열 대기'; t.sigClass = 'r'; t.amount = '모으기 일시중지'; }
+  else if(t.sma200 > 0 && t.price > t.sma200 && t.sma50 > 0 && t.price > t.sma50){ t.signal = '🟢 적극 매수'; t.sigClass = 'g'; t.amount = '1,000원'; }
+  else if(t.sma200 > 0 && t.price > t.sma200){ t.signal = '🟢 눌림목 매수'; t.sigClass = 'g'; t.amount = '1,000원'; }
+  else { t.signal = '🟡 분할·느린 매수'; t.sigClass = 'y'; t.amount = '500원'; }
+  var u = unitFor(t);
+  t.target = roundTo(t.price * (1 + t.tp), u);
+  t.stop = roundTo(t.price * (1 - t.sp), u);
+}
+
+// ---------------- 포맷 ----------------
+function fmtKRW(v){ return v.toLocaleString('ko-KR', {maximumFractionDigits:0}) + '원'; }
+function money(t, v){ return t.cur === 'KRW' ? fmtKRW(v) : '$' + v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function pctStr(v){ return (v >= 0 ? '+' : '') + v.toFixed(2) + '%'; }
+function cls(v){ return v >= 0 ? 'up' : 'dn'; }
+function na(v, s){ return isNaN(v) ? '-' : s; }
+function idxVal(x){
+  if(!x.ok) return '-';
+  if(x.sym.indexOf('KRW') === 0) return x.price.toLocaleString('ko-KR',{minimumFractionDigits:1, maximumFractionDigits:1}) + '원';
+  if(x.sym.indexOf('=F') > 0) return '$' + x.price.toLocaleString('en-US',{minimumFractionDigits:2, maximumFractionDigits:2});
+  return x.price.toLocaleString('en-US',{minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function idxNote(x){
+  if(!x.ok) return '데이터 없음';
+  if(x.sym === '^VIX'){
+    if(x.price < 15) return '안정적 (단, 방심 금물)';
+    if(x.price < 20) return '중립';
+    if(x.price < 25) return '경계 필요';
+    return '불안 확산 — 분할 매수 유리';
+  }
+  if(x.sym === 'KRW=X') return x.price >= 1350 ? '원화 약세 → 달러 자산 환산 유리' : '중립';
+  if(x.sym === 'CL=F') return x.price >= 85 ? '고유가 → 인플레·금리 압력 요인' : '안정';
+  if(x.sym === 'GC=F') return '인플레이션 헤지 자산';
+  if(x.wk52H > 0) return '52주 최고 대비 ' + pctStr((x.price/x.wk52H - 1) * 100);
+  return '';
+}
+function dailyTotal(cats){
+  var s = 0;
+  cats.forEach(function(cat){ cat.forEach(function(t){
+    if(!t.ok) return;
+    if(t.sigClass === 'g') s += 1000; else if(t.sigClass === 'y') s += 500;
+  });});
+  return s;
+}
+
+// ---------------- HTML 보고서 생성 ----------------
+function buildHtml(ts, idx, cats, srcLabel){
+  var h = '';
+  h += '<div class="card hero"><div class="ht">📈 데일리 투자보고서</div>'
+    + '<div class="hs">생성: ' + ts + ' · ' + (srcLabel || '실시간 시세 자동 수집 기반') + '</div>'
+    + '<div class="hs">전략: 매일 종목당 1,000원 소액 적립식 장기 투자 (주식 모으기)</div></div>';
+
+  h += '<div class="card"><b>💡 오늘의 실행 요약</b><ul>'
+    + '<li>오늘 기준 예상 모으기 금액: <b>' + dailyTotal(cats).toLocaleString('ko-KR') + '원/일</b> (🟢 1,000원 종목 + 🟡 500원 종목 기준)</li>'
+    + '<li>🔴 과열(RSI 70 초과) 종목은 모으기 일시중지 신호입니다.</li>'
+    + '<li>모든 종목에 목표가·손절가·신호가 실시간으로 재계산되었습니다.</li>'
+    + '</ul><div class="note">🚦 신호 기준: 🟢 주가 &gt; 200일선·50일선 = 적극 매수 / 🟢 눌림목 = 200일선 위·50일선 아래 / 🟡 200일선 아래 = 분할·느린 매수(500원) / 🔴 RSI &gt; 70 = 과열 대기</div></div>';
+
+  // 1. 스냅샷
+  h += '<h2>1️⃣ 실시간 시장 스냅샷</h2><div class="card"><table><tr><th>지표</th><th>현재</th><th>등락</th><th>해설</th></tr>';
+  idx.forEach(function(x){
+    h += '<tr><td><b>' + x.name + '</b></td><td>' + idxVal(x) + '</td><td>'
+       + (x.ok ? '<span class="' + cls(x.chg) + '">' + pctStr(x.chg) + '</span>' : '-')
+       + '</td><td class="muted">' + idxNote(x) + '</td></tr>';
+  });
+  h += '</table><div class="muted" style="margin-top:8px">해외 지수는 미국 장 기준(장중 또는 직전 마감)이며, 국내 지수는 한국거래소 기준입니다.</div></div>';
+
+  // 2. 포트폴리오 현황
+  h += '<h2>2️⃣ 포트폴리오 현황 (카테고리별 TOP 5)</h2>';
+  cats.forEach(function(cat, ci){
+    h += '<h3>' + CAT_NAMES[ci] + '</h3><div class="card"><table>'
+      + '<tr><th>#</th><th>종목</th><th>현재가(등락)</th><th>의견</th><th>목표가</th><th>손절가</th><th>모으기</th></tr>';
+    cat.forEach(function(t, i){
+      h += '<tr><td>' + (i+1) + '</td><td><b>' + t.name + '</b></td><td>';
+      if(t.ok){
+        h += money(t, t.price) + '<br><span class="' + cls(t.chg) + '" style="font-size:11px">' + pctStr(t.chg) + '</span>';
+      } else h += '<span class="muted">시세 없음</span>';
+      h += '</td><td><span class="badge ' + t.sigClass + '">' + t.signal + '</span></td><td>'
+        + (t.ok ? money(t, t.target) : '-') + '</td><td>' + (t.ok ? money(t, t.stop) : '-')
+        + '</td><td>' + t.amount + '</td></tr>';
+    });
+    h += '</table></div>';
+  });
+
+  // 3. 시장 분석
+  h += '<h2>3️⃣ 시장 분석 현황</h2>';
+  h += '<div class="card"><b>📈 추세 자동 해설 (실시간 계산)</b><ul>';
+  for(var i = 0; i < 5; i++){
+    var x = idx[i]; if(!x.ok) continue;
+    var line = x.name + ' ' + idxVal(x) + ' (' + pctStr(x.chg) + ')';
+    if(x.wk52H > 0) line += ' — 52주 최고점 대비 ' + pctStr((x.price/x.wk52H - 1) * 100);
+    h += '<li>' + line + '</li>';
+  }
+  if(idx[5].ok) h += '<li>VIX ' + idxVal(idx[5]) + ' — ' + idxNote(idx[5]) + '</li>';
+  h += '</ul><div class="muted">심한 조정(52주 고점 대비 큰 폭 하락) 이후의 반등 초입에서는 추격 매수보다 매일 일정 금액을 나누어 사는 적립식이 유리합니다.</div></div>';
+
+  h += '<div class="card"><b>💰 금리·거시 환경 해설</b><p>' + STATIC.RATE_ENV + '</p></div>';
+  h += '<div class="card"><b>🧠 시장 심리 읽기</b><p>' + STATIC.SENTIMENT + '</p></div>';
+  h += '<div class="card"><b>🌱 성장주 vs 배당주</b><p>' + STATIC.GROWTH_DIV + '</p></div>';
+  h += '<div class="card"><b>🔍 가치 투자와 가치 함정</b><p>' + STATIC.VALUE + '</p></div>';
+  h += '<div class="card"><b>🌍 글로벌 이벤트와 포트폴리오 보호 전략</b><p>' + STATIC.GLOBAL + '</p></div>';
+
+  h += '<div class="card"><b>📑 재무제표에서 꼭 볼 핵심 지표</b><table>'
+    + '<tr><th>업종</th><th>볼 것</th><th>왜 중요한가</th></tr>'
+    + '<tr><td>반도체</td><td>영업이익률·HBM 비중·재고</td><td>슈퍼사이클의 실적 검증</td></tr>'
+    + '<tr><td>은행</td><td>순이자마진·CET1·주주환원율</td><td>금리 인상 수혜의 이익 환원 확인</td></tr>'
+    + '<tr><td>자동차</td><td>대당 마진·환율 효과</td><td>급락 주가가 과도한 비관인지 검증</td></tr>'
+    + '<tr><td>제약</td><td>핵심 치료제 매출 성장률</td><td>조정 이유가 펀더멘털인지 소음인지 구분</td></tr>'
+    + '<tr><td>빅테크</td><td>데이터센터 매출·AI 투자 대비 수익</td><td>"AI 거품 논쟁"의 답은 실적</td></tr>'
+    + '</table></div>';
+
+  h += '<div class="card"><b>🛡️ 리스크 관리 규칙 (전 종목 적용)</b><ul>'
+    + '<li><b>손절매</b>: 전 종목 -8~-11% 손절가 설정, <u>일봉 종가 기준</u> 이탈 시 모으기 중단 + 보유분 전량 매도</li>'
+    + '<li><b>분산</b>: 4개 카테고리 × 5종목 = 20종목, 단일 종목 비중 10% 이내 (매일 균등 모으기로 자동 달성)</li>'
+    + '<li><b>포지션 규모</b>: 종목당 1,000원/일 기준 — 여유 자금이 생기면 종목 수가 아니라 종목당 금액을 늘리기</li>'
+    + '<li><b>과열 회피</b>: 당일 +5% 이상 급등 종목은 건너뛰거나 절반만 매수</li>'
+    + '</ul></div>';
+
+  // 4. 종목 상세
+  h += '<h2>4️⃣ 종목 상세 현황 (선정 근거 + 실시간 지표)</h2>'
+    + '<div class="muted" style="margin:0 2px 8px">선정 근거는 애널리스트 분석 기준이며, 가격·지표·의견·목표가·손절가는 생성 시점에 실시간으로 재계산됩니다.</div>';
+  cats.forEach(function(cat, ci){
+    h += '<h3>' + CAT_NAMES[ci] + '</h3>';
+    cat.forEach(function(t, i){
+      h += '<div class="card">';
+      h += '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">'
+        + '<b style="font-size:15px">' + (i+1) + '. ' + t.name + ' <span class="muted" style="font-weight:400">' + t.sym + '</span></b>'
+        + '<span class="badge ' + t.sigClass + '">' + t.signal + '</span></div>';
+      if(t.ok){
+        h += '<div class="big">' + money(t, t.price) + ' <span class="' + cls(t.chg) + '" style="font-size:13px">' + pctStr(t.chg) + '</span></div>';
+        h += '<div class="kv">'
+          + '<div>목표가<b>' + money(t, t.target) + '</b></div>'
+          + '<div>손절가<b>' + money(t, t.stop) + '</b></div>'
+          + '<div>RSI(14)<b>' + t.rsi.toFixed(1) + '</b></div>'
+          + '<div>1개월<b>' + na(t.ret1m, pctStr(t.ret1m)) + '</b></div>'
+          + '<div>3개월<b>' + na(t.ret3m, pctStr(t.ret3m)) + '</b></div>'
+          + '<div>모으기 금액<b>' + t.amount + '</b></div>'
+          + '</div>';
+        h += '<div class="muted">이동평균 — 20일: ' + (t.sma20 > 0 ? money(t, t.sma20) : '-')
+          + ' · 50일: ' + (t.sma50 > 0 ? money(t, t.sma50) : '-')
+          + ' · 200일: ' + (t.sma200 > 0 ? money(t, t.sma200) : '-');
+        if(t.wk52H > 0) h += '<br>52주 범위: ' + money(t, t.wk52L) + ' ~ ' + money(t, t.wk52H);
+        h += '</div>';
+      } else {
+        h += '<div class="muted">이번 생성에서 시세를 가져오지 못했습니다. 다음 새로고침에서 재시도됩니다.</div>';
+      }
+      h += '<p><b>선정 이유</b><br>' + t.why + '</p>';
+      h += '<p><b>🟢 모으기 시작</b><br>' + t.sg + '</p>';
+      h += '<p><b>🏁 모으기 종료(차익실현·손절)</b><br>' + t.eg + '</p>';
+      h += '</div>';
+    });
+  });
+
+  // 5. 제외 종목
+  h += '<h2>5️⃣ 검토했지만 제외한 종목</h2><div class="card"><table><tr><th>종목</th><th>제외 사유</th></tr>'
+    + '<tr><td>현대모비스</td><td>급락 후 과매도이나 반등 촉매 부재 — "떨어지는 칼날"</td></tr>'
+    + '<tr><td>네이버·카카오</td><td>모든 이동평균선 아래, 추세 하락 지속</td></tr>'
+    + '<tr><td>삼성바이오로직스·셀트리온</td><td>헬스케어 업종 약세 — 추세 확인 전 대기</td></tr>'
+    + '<tr><td>메타 (META)</td><td>단기 과열 — 조정 시 재편입 검토</td></tr>'
+    + '<tr><td>애플 (AAPL)</td><td>장기 급등 후 단기 과열 부담</td></tr>'
+    + '<tr><td>JEPI</td><td>모든 이동평균선 아래 — 추세 부재</td></tr>'
+    + '</table></div>';
+
+  // 6. 실행 가이드
+  h += '<h2>6️⃣ 데일리 주식 모으기 실행 가이드</h2><div class="card">'
+    + '<b>💳 어떻게 사나요?</b><p>증권사 앱의 <b>소수점 거래·자동 모으기</b> 서비스로 각 종목 1,000원 자동 매수를 등록합니다. 해외주식도 원화 소수점 주문으로 환전 없이 가능합니다.</p>'
+    + '<b>🚦 시작 조건</b><ul><li>🟢 주가가 200일선 위 → 전액(1,000원)으로 시작</li><li>🟡 200일선 아래·바닥 신호 → 절반(500원)으로 시작</li><li>🔴 RSI 70 초과 과열 → 모으기 일시중지</li></ul>'
+    + '<b>🏁 종료 조건</b><ul><li>목표가 도달 → 보유분 1/3 매도 → 20일선 이탈 시 1/3 추가 매도 → 200일선 이탈 시 나머지 매도 검토</li><li>손절가 이탈(일봉 종가 기준) → 전량 매도 + 모으기 중단, 20일선 회복 시 재시작 검토</li><li>펀더멘털 훼손(실적 쇼크 등) → 분기 점검에서 종목 교체</li></ul>'
+    + '<b>📅 점검 리듬</b><ul><li>매일: 자동 매수 실행만 확인 (차트 볼 필요 없음)</li><li>매주: 목표가·손절가 근접 종목 점검</li><li>매 분기: 실적·중앙은행 회의 결과를 반영해 TOP 5 재선정</li></ul>'
+    + '</div>';
+
+  // 7. 유의사항
+  h += '<h2>7️⃣ 유의사항</h2><div class="card muted">' + STATIC.DISCLAIMER + '</div>';
+  h += '<div class="muted" style="text-align:center;padding:8px 0 20px">데일리 투자보고서 웹앱 v1.0 · 시세: Yahoo Finance · 종목 선정 기준: 2026-09-18</div>';
+  return h;
+}
+
+// ---------------- 공유용 텍스트 ----------------
+function buildText(ts, idx, cats){
+  var b = '';
+  b += '📈 데일리 투자보고서\n생성: ' + ts + ' (실시간 시세 기준)\n';
+  b += '전략: 매일 종목당 1,000원 소액 적립식 장기 투자 — 오늘 기준 예상 ' + dailyTotal(cats).toLocaleString('ko-KR') + '원/일\n';
+  b += '\n━━━━━━━━━━━━━━━━━━\n■ 실시간 시장 스냅샷\n';
+  idx.forEach(function(x){
+    b += '· ' + x.name + ': ' + idxVal(x) + (x.ok ? ' (' + pctStr(x.chg) + ')' : '') + ' — ' + idxNote(x) + '\n';
+  });
+  cats.forEach(function(cat, ci){
+    b += '\n━━━━━━━━━━━━━━━━━━\n■ ' + CAT_NAMES[ci] + '\n';
+    cat.forEach(function(t, i){
+      b += '\n' + (i+1) + '. ' + t.name + '\n';
+      if(t.ok){
+        b += '   현재가 ' + money(t, t.price) + ' (' + pctStr(t.chg) + ')\n';
+        b += '   의견: ' + t.signal + ' / 모으기: ' + t.amount + '\n';
+        b += '   목표가 ' + money(t, t.target) + ' / 손절가 ' + money(t, t.stop) + '\n';
+        b += '   RSI ' + t.rsi.toFixed(1) + ' · 1개월 ' + na(t.ret1m, pctStr(t.ret1m)) + ' · 3개월 ' + na(t.ret3m, pctStr(t.ret3m)) + '\n';
+      } else b += '   (시세 수집 실패 — 다음 새로고침에서 재시도)\n';
+      b += '   선정 이유: ' + t.why + '\n';
+      b += '   시작: ' + t.sg + '\n';
+      b += '   종료: ' + t.eg + '\n';
+    });
+  });
+  b += '\n━━━━━━━━━━━━━━━━━━\n■ 모으기 시작/종료 원칙\n';
+  b += '· 시작: 🟢 200일선 위 → 1,000원 / 🟡 200일선 아래·바닥 신호 → 500원 / 🔴 RSI 70+ 과열 → 일시중지\n';
+  b += '· 종료: 목표가 도달 시 1/3 매도 → 20일선 이탈 시 1/3 추가 → 200일선 이탈 시 나머지 매도 검토 / 손절가 이탈(일봉 종가) 시 전량 매도·중단\n';
+  b += '\n■ 리스크 관리 규칙\n';
+  b += '· 전 종목 손절가(-8~-11%) 설정, 일봉 종가 이탈 시 중단+전량 매도\n';
+  b += '· 4개 카테고리 × 5종목 분산, 단일 종목 비중 10% 이내\n';
+  b += '· 당일 +5% 이상 급등 종목은 건너뛰거나 절반만 매수\n';
+  b += '\n※ ' + STATIC.DISCLAIMER + '\n';
+  return b;
+}
+
+// ---------------- 저장 / 불러오기 ----------------
+function saveReport(html, text, ts){
+  try {
+    localStorage.setItem('rpt.html', html);
+    localStorage.setItem('rpt.txt', text);
+    localStorage.setItem('rpt.ts', ts);
+  } catch(e){ /* 저장 공간 부족 시 무시 */ }
+}
+function loadSaved(){
+  try {
+    var h = localStorage.getItem('rpt.html');
+    if(!h) return null;
+    return { html: h, txt: localStorage.getItem('rpt.txt') || '', ts: localStorage.getItem('rpt.ts') || '-' };
+  } catch(e){ return null; }
+}
+
+// ---------------- 화면 제어 ----------------
+var elContent = document.getElementById('content');
+var elSub = document.getElementById('subLine');
+var elStatus = document.getElementById('statusBar');
+var elStatusText = document.getElementById('statusText');
+var elBarFill = document.getElementById('barFill');
+var btnRefresh = document.getElementById('btnRefresh');
+var btnShare = document.getElementById('btnShare');
+var busy = false;
+
+function nowStr(){
+  var d = new Date();
+  var wk = ['일','월','화','수','목','금','토'][d.getDay()];
+  var ap = d.getHours() < 12 ? '오전' : '오후';
+  var hh = d.getHours() % 12; if(hh === 0) hh = 12;
+  var mm = d.getMinutes();
+  return d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 (' + wk + ') ' + ap + ' ' + hh + ':' + (mm < 10 ? '0' : '') + mm;
+}
+
+function placeholder(){
+  return '<div class="card"><h2>📈 데일리 투자보고서</h2>'
+    + '<p><b>🔄 새로고침</b> 버튼을 누르면 <u>누른 시점의 실시간 시세</u>로<br>국내주식·국내ETF·해외주식·해외ETF TOP5 보고서를 생성합니다. (약 10~20초 소요)</p>'
+    + '<p>생성된 보고서는 이 기기에 저장되어 다음 접속 때 자동으로 열리고,<br><b>📤 공유</b> 버튼으로 카카오톡 등에 보낼 수 있습니다.</p>'
+    + '<div class="note">📲 <b>아이폰 홈 화면에 설치하는 법</b><br>사파리 하단의 <b>공유 버튼(⬆︎)</b>을 누르고 <b>"홈 화면에 추가"</b>를 선택하면 앱처럼 사용할 수 있습니다.</div></div>';
+}
+
+function firstRun(){
+  return '<div class="card"><h2>📈 첫 보고서 자동 생성 중...</h2>'
+    + '<p>처음 실행하셨네요! <b>최신 시세를 수집해 보고서를 자동으로 만들고 있습니다.</b><br>잠시만 기다려 주세요 (약 10~20초 소요).</p>'
+    + '<div class="note">💡 이후에는 <b>🔄 새로고침</b> 버튼을 누를 때마다 <u>그 시점의 최신 데이터</u>로 보고서가 다시 생성됩니다.</div></div>';
+}
+
+function staleNotice(ts){
+  return '<div class="card note" style="margin-bottom:12px">⏰ <b>오늘 데이터가 아닙니다.</b> 마지막으로 생성한 보고서입니다 (생성: ' + ts + ').<br>최신 시세로 보려면 위 <b>🔄 새로고침</b> 버튼을 눌러 주세요.</div>';
+}
+
+function setBusy(on){
+  busy = on;
+  btnRefresh.disabled = on;
+  btnShare.disabled = on;
+  elStatus.className = on ? '' : 'hidden';
+}
+
+function refresh(){
+  if(busy) return;
+  setBusy(true);
+  var idx = INDICES.map(function(x){ return {sym: x.sym, name: x.name, ok: false, price: 0, chg: 0, wk52H: 0}; });
+  var cats = makeCats();
+  var allSyms = idx.map(function(x){ return {kind:'idx', ref: x, sym: x.sym}; });
+  cats.forEach(function(cat){ cat.forEach(function(t){ allSyms.push({kind:'tk', ref: t, sym: t.sym}); }); });
+  var total = allSyms.length, done = 0;
+
+  function loadOne(item){
+    return fetchChart(item.sym).then(function(j){
+      var q = parseChart(j);
+      if(item.kind === 'idx'){
+        var x = item.ref;
+        x.ok = q.price > 0; x.price = q.price; x.chg = q.chg; x.wk52H = q.wk52H;
+      } else {
+        var t = item.ref;
+        t.ok = q.price > 0;
+        if(t.ok){
+          t.price = q.price; t.chg = q.chg; t.wk52H = q.wk52H; t.wk52L = q.wk52L;
+          t.sma20 = sma(q.closes, 20); t.sma50 = sma(q.closes, 50); t.sma200 = sma(q.closes, 200);
+          t.rsi = rsi14(q.closes); t.ret1m = ret(q.closes, 21); t.ret3m = ret(q.closes, 63);
+        }
+      }
+      item.done = true;
+    }).catch(function(){ /* 일시 실패 — 재시도 라운드에서 다시 시도 */ })
+    .then(function(){
+      done++;
+      elStatusText.textContent = '시세 수집 중 (' + done + '/' + total + ')';
+      elBarFill.style.width = Math.round(Math.min(done, total)/total*100) + '%';
+    });
+  }
+
+  pool(allSyms, 6, loadOne).then(function(){
+    var failed = allSyms.filter(function(it){ return !it.done; });
+    if(failed.length === 0) return null;
+    elStatusText.textContent = '일시 실패 ' + failed.length + '개 종목 재시도 중...';
+    return new Promise(function(res){ setTimeout(res, 3000); }).then(function(){
+      return pool(failed, 4, loadOne);
+    });
+  }).then(function(){
+    cats.forEach(function(cat){ cat.forEach(finalize); });
+    var okCount = 0;
+    idx.forEach(function(x){ if(x.ok) okCount++; });
+    cats.forEach(function(cat){ cat.forEach(function(t){ if(t.ok) okCount++; }); });
+    if(okCount === 0){
+      loadExternalData().then(function(dj){
+        renderFromDataJson(dj);
+        alert('실시간 수집에 실패해 자동 수집된 최신 데이터로 보고서를 표시합니다.');
+      }).catch(function(){
+        var prev = loadSaved();
+        if(prev){ elContent.innerHTML = prev.html; elSub.textContent = '마지막 생성: ' + prev.ts; }
+        else { elContent.innerHTML = placeholder(); elSub.textContent = '시세 수집 실패 — 잠시 후 새로고침을 다시 눌러 주세요'; }
+        alert('시세를 가져오지 못했습니다. 네트워크 연결을 확인한 뒤 🔄 새로고침을 다시 눌러 주세요.');
+      }).then(function(){ setBusy(false); });
+      return;
+    }
+    var ts = nowStr();
+    var html = buildHtml(ts, idx, cats, '실시간 시세 기준');
+    var text = buildText(ts, idx, cats);
+    saveReport(html, text, ts);
+    elContent.innerHTML = html;
+    elSub.textContent = '마지막 생성: ' + ts;
+    window.scrollTo(0, 0);
+    setBusy(false);
+  });
+}
+
+function share(){
+  var saved = loadSaved();
+  if(!saved){ alert('먼저 🔄 새로고침으로 보고서를 생성해 주세요'); return; }
+  var payload = { title: '데일리 투자보고서', text: saved.txt };
+  if(navigator.share){
+    navigator.share(payload).catch(function(){ /* 사용자가 취소 */ });
+  } else if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(saved.txt).then(function(){ alert('보고서 전문이 복사되었습니다. 카카오톡 대화창에 붙여넣어 주세요.'); });
+  } else {
+    alert('이 브라우저에서는 공유를 지원하지 않습니다. 보고서를 길게 눌러 복사해 주세요.');
+  }
+}
+
+btnRefresh.addEventListener('click', refresh);
+btnShare.addEventListener('click', share);
+
+// ---------------- 자동 수집 데이터 (data.json) 지원 ----------------
+// 웹앱과 같은 폴더에 data.json이 있으면(GitHub Pages + 자동 수집 워크플로)
+// 항상 그 데이터로 보고서를 그린다. 없으면(로컬 파일 실행) 실시간 수집을 사용한다.
+
+function loadExternalData(){
+  return fetch('data.json', {cache:'no-store'}).then(function(r){
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function(j){
+    if(!j || !j.symbols) throw new Error('bad data.json');
+    return j;
+  });
+}
+
+function reportFromDataJson(dj){
+  var idx = INDICES.map(function(x){ return {sym: x.sym, name: x.name, ok: false, price: 0, chg: 0, wk52H: 0}; });
+  var cats = makeCats();
+  function apply(ref, sym){
+    var q = dj.symbols[sym];
+    if(!q || !(q.price > 0)) return;
+    ref.ok = true; ref.price = q.price; ref.chg = q.chg || 0;
+    ref.wk52H = q.wk52H || 0; ref.wk52L = q.wk52L || 0;
+    if(ref.cur){ // 개별 종목: 기술지표 계산
+      var c = q.closes || [];
+      ref.sma20 = sma(c, 20); ref.sma50 = sma(c, 50); ref.sma200 = sma(c, 200);
+      ref.rsi = rsi14(c); ref.ret1m = ret(c, 21); ref.ret3m = ret(c, 63);
+    }
+  }
+  idx.forEach(function(x){ apply(x, x.sym); });
+  cats.forEach(function(cat){ cat.forEach(function(t){ apply(t, t.sym); }); });
+  cats.forEach(function(cat){ cat.forEach(finalize); });
+  var genTs = '-', genDate = null;
+  if(dj.generated){
+    var d = new Date(dj.generated);
+    if(!isNaN(d.getTime())){
+      genDate = d;
+      var hh = String(d.getHours()).padStart(2, '0'), mm = String(d.getMinutes()).padStart(2, '0');
+      genTs = d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 ' + hh + ':' + mm;
+    }
+  }
+  return { idx: idx, cats: cats, ts: genTs, dateKey: genDate };
+}
+
+function renderFromDataJson(dj){
+  var rep = reportFromDataJson(dj);
+  var html = buildHtml(rep.ts, rep.idx, rep.cats, '자동 수집 데이터 기준');
+  var text = buildText(rep.ts, rep.idx, rep.cats);
+  saveReport(html, text, rep.ts);
+  try {
+    if(rep.dateKey) localStorage.setItem('rpt.date', rep.dateKey.getFullYear() + '-' + (rep.dateKey.getMonth()+1) + '-' + rep.dateKey.getDate());
+  } catch(e){}
+  elContent.innerHTML = html;
+  elSub.textContent = '데이터 수집: ' + rep.ts;
+  window.scrollTo(0, 0);
+}
+
+// 초기 로드:
+//  1) 같은 폴더에 data.json이 있으면(호스팅 + 자동 수집) 항상 그 최신 데이터로 표시
+//  2) 없으면(로컬 파일 실행) 마지막 저장 보고서를 표시하고, 최초 실행이면 실시간 자동 생성
+(function init(){
+  loadExternalData().then(function(dj){
+    renderFromDataJson(dj);
+  }).catch(function(){
+    var saved = loadSaved();
+    if(saved){
+      var d = new Date();
+      var todayKey = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+      var isToday = false;
+      try { isToday = localStorage.getItem('rpt.date') === todayKey; } catch(e){}
+      elContent.innerHTML = (isToday ? '' : staleNotice(saved.ts)) + saved.html;
+      elSub.textContent = '마지막 생성: ' + saved.ts;
+    } else {
+      elContent.innerHTML = firstRun();
+      elSub.textContent = '최신 시세로 첫 보고서를 자동 생성하는 중...';
+      setTimeout(refresh, 400);
+    }
+  });
+})();
+</script>
+</body>
+</html>
+  elContent.innerHTML = saved.html;
+    elSub.textContent = '마지막 생성: ' + saved.ts;
+  } else {
+    elContent.innerHTML = placeholder();
+    elSub.textContent = '아직 생성된 보고서가 없습니다';
+  }
+})();
+</script>
+</body>
+</html>
